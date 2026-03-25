@@ -30,6 +30,25 @@ patch:
     "/deg": ["°C", "°F", "°"]
     "/CO2": ["CO₂"]
     "/co2": ["CO₂"]
+    "/H2O": ["H₂O"]
+    "/h2o": ["H₂O"]
+    # Math & science symbols
+    "/approx": ["≈"]
+    "/neq": ["≠"]
+    "/leq": ["≤"]
+    "/geq": ["≥"]
+    "/inf": ["∞"]
+    "/sum": ["∑"]
+    "/sqrt": ["√"]
+    "/pm": ["±"]
+    "/times": ["×"]
+    "/div": ["÷"]
+    "/prop": ["∝"]
+    "/partial": ["∂"]
+    "/nabla": ["∇"]
+    "/int": ["∫"]
+    "/iint": ["∬"]
+    "/arrow": ["→", "←", "↑", "↓", "↔", "⇒", "⇐", "⇔"]
 
   # Extend recognizer to allow mixed alphanumeric codes like /CO2
-  "recognizer/patterns/punct": "^/([0-9]|10|[A-Za-z]+[0-9]*)$"
+  "recognizer/patterns/punct": "^/([0-9]|10|[A-Za-z][A-Za-z0-9]*)$"
