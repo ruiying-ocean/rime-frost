@@ -1,0 +1,35 @@
+# Custom overrides for rime_frost.schema.yaml
+patch:
+  # Add named Greek letter shortcuts and science symbols
+  # These supplement the existing /xl (all lowercase) and /xld (all uppercase) shortcuts.
+  "punctuator/symbols/+":
+    "/alpha": ["α", "Α"]
+    "/beta": ["β", "Β"]
+    "/gamma": ["γ", "Γ"]
+    "/delta": ["δ", "Δ"]
+    "/epsilon": ["ε", "Ε"]
+    "/zeta": ["ζ", "Ζ"]
+    "/eta": ["η", "Η"]
+    "/theta": ["θ", "Θ"]
+    "/iota": ["ι", "Ι"]
+    "/kappa": ["κ", "Κ"]
+    "/lambda": ["λ", "Λ"]
+    "/mu": ["μ", "Μ"]
+    "/nu": ["ν", "Ν"]
+    "/xi": ["ξ", "Ξ"]
+    "/omicron": ["ο", "Ο"]
+    "/pi": ["π", "Π"]
+    "/rho": ["ρ", "Ρ"]
+    "/sigma": ["σ", "Σ", "ς"]
+    "/tau": ["τ", "Τ"]
+    "/upsilon": ["υ", "Υ"]
+    "/phi": ["φ", "Φ"]
+    "/chi": ["χ", "Χ"]
+    "/psi": ["ψ", "Ψ"]
+    "/omega": ["ω", "Ω"]
+    "/deg": ["°C", "°F", "°"]
+    "/CO2": ["CO₂"]
+    "/co2": ["CO₂"]
+
+  # Extend recognizer to allow mixed alphanumeric codes like /CO2
+  "recognizer/patterns/punct": "^/([0-9]|10|[A-Za-z]+[0-9]*)$"

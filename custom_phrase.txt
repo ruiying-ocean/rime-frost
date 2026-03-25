@@ -61,3 +61,12 @@ gone	gone
 Go程	gocheng
 code	code
 SOHO	soho
+
+# === Personal custom phrases ===
+macOS	mac	99
+颜文字	yanwenzi	100
+碧皓青	bihaiqing	99
+碧月青	biyueqing	99
+黑水鸭	heishuiya	99
+蓝水鸭	lanshuiya	99
+浮游	fuyou	1

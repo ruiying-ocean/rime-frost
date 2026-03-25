@@ -1,0 +1,8 @@
+# Custom overrides for default.yaml
+# Keep this file for personal customizations — upstream default.yaml stays untouched.
+patch:
+  schema_list:
+    - schema: rime_frost             # 白霜拼音（全拼）
+    - schema: latex                  # LaTeX
+
+  menu/page_size: 9
